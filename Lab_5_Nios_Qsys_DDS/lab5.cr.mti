@@ -1,0 +1,176 @@
+C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/reset_delay.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/reset_delay.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Reset_Delay
+
+Top level modules:
+	Reset_Delay
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/FFXII_LB_Cursor2.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/FFXII_LB_Cursor2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FFXII_LB_Cursor2
+
+Top level modules:
+	FFXII_LB_Cursor2
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/linear_feedback_shift_register.sv {1 {vlog -work work -sv -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/linear_feedback_shift_register.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module linear_feedback_shift_register
+
+Top level modules:
+	linear_feedback_shift_register
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/waveform_gen.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/waveform_gen.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity waveform_gen
+-- Compiling architecture rtl of waveform_gen
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/doublesync_no_reset.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/doublesync_no_reset.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module doublesync_no_reset
+
+Top level modules:
+	doublesync_no_reset
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/sdram.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/sdram.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sdram_input_efifo_module
+-- Compiling module sdram
+
+Top level modules:
+	sdram
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_tb.v {2 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dds_tb
+** Warning: C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_tb.v(4): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+
+Top level modules:
+	dds_tb
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/sdram1.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/sdram1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sdram1
+
+Top level modules:
+	sdram1
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/doublesync.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/doublesync.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module doublesync
+
+Top level modules:
+	doublesync
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/FFXII_LB_Cursor.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/FFXII_LB_Cursor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FFXII_LB_Cursor
+
+Top level modules:
+	FFXII_LB_Cursor
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Generate_Arbitrary_Divided_Clk32.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Generate_Arbitrary_Divided_Clk32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Generate_Arbitrary_Divided_Clk32
+
+Top level modules:
+	Generate_Arbitrary_Divided_Clk32
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/graph_bars.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/graph_bars.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module graph_bars
+
+Top level modules:
+	graph_bars
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/clk_sync_tb.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/clk_sync_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clk_sync_tb
+
+Top level modules:
+	clk_sync_tb
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_and_nios_lab.v {0 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_and_nios_lab.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dds_and_nios_lab
+** Error: (vlog-13032) C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_and_nios_lab.v(203): near ";": Syntax error.
+** Error: (vlog-13032) C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_and_nios_lab.v(204): near ";": Syntax error.
+** Error: (vlog-13069) C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_and_nios_lab.v(206): near "[": syntax error, unexpected '['.
+** Error: C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/dds_and_nios_lab.v(206): (vlog-13205) Syntax error found in the scope following 'logic'. Is there a missing '::'?
+
+} {4.0 8.0} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/hack_ltm_sincronization.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/hack_ltm_sincronization.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module hack_ltm_sincronization
+
+Top level modules:
+	hack_ltm_sincronization
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/freq_divider.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/freq_divider.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module freq_divider
+
+Top level modules:
+	freq_divider
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Keyboard_Controller.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Keyboard_Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Keyboard_Controller
+
+Top level modules:
+	Keyboard_Controller
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/ScanCodeToEvent.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/ScanCodeToEvent.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ScanCodeToEvent
+
+Top level modules:
+	ScanCodeToEvent
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Cursor.v {0 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Cursor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Cursor
+** Error: C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Cursor.v(8): 'Port' must not be declared to be an array: logic.
+** Error: (vlog-13069) C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/Cursor.v(8): near "oRGB": syntax error, unexpected IDENTIFIER, expecting ')'.
+
+} {4.0 6.0} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/clk_sync.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/clk_sync.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clk_sync
+
+Top level modules:
+	clk_sync
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/PS2_ScanCodeReader.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/PS2_ScanCodeReader.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PS2_ScanCodeReader
+
+Top level modules:
+	PS2_ScanCodeReader
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/sincos_lut.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/sincos_lut.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sincos_lut
+-- Compiling architecture rtl of sincos_lut
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/plot_graph.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/plot_graph.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module plot_graph
+
+Top level modules:
+	plot_graph
+
+} {} {}} C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/SevenSegmentDisplayDecoder.v {1 {vlog -work work -stats=none C:/Users/reube/Desktop/311_Lab5/Lab5_template_de1soc/SevenSegmentDisplayDecoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SevenSegmentDisplayDecoder
+
+Top level modules:
+	SevenSegmentDisplayDecoder
+
+} {} {}}

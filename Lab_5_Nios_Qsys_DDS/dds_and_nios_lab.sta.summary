@@ -1,0 +1,1109 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : -7.149
+TNS   : -299.982
+
+Type  : Slow 1100mV 85C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : -5.930
+TNS   : -148.265
+
+Type  : Slow 1100mV 85C Model Setup 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -5.565
+TNS   : -264.619
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.784
+TNS   : -859.090
+
+Type  : Slow 1100mV 85C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : -4.528
+TNS   : -27.517
+
+Type  : Slow 1100mV 85C Model Setup 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.082
+TNS   : -37.868
+
+Type  : Slow 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : -2.780
+TNS   : -86.933
+
+Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 10.195
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 16.810
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 17.448
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.794
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 30.583
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 32.875
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 36.052
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 36.541
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'freqgen_audio_dac'
+Slack : 45.600
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -1.165
+TNS   : -27.423
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.489
+TNS   : -15.902
+
+Type  : Slow 1100mV 85C Model Hold 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.022
+TNS   : -0.022
+
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'freqgen_audio_dac'
+Slack : 0.491
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.509
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 0.657
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 0.753
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 1.133
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 1.626
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 2.093
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 2.135
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -5.314
+TNS   : -15.730
+
+Type  : Slow 1100mV 85C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : -3.779
+TNS   : -18.882
+
+Type  : Slow 1100mV 85C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : -3.215
+TNS   : -43.370
+
+Type  : Slow 1100mV 85C Model Recovery 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : -3.082
+TNS   : -3.082
+
+Type  : Slow 1100mV 85C Model Recovery 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.677
+TNS   : -10.695
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : 13.105
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.676
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 17.693
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'freqgen_audio_dac'
+Slack : 39.566
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.519
+TNS   : -1.158
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.837
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.923
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 2.486
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 2.619
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 3.175
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'freqgen_audio_dac'
+Slack : 51.452
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.278
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.875
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.282
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 18.385
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 18.748
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 18.769
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 18.844
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 18.846
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 18.882
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 18.898
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 18.902
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 18.909
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 18.917
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.156
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 19.326
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 19.418
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'freqgen_audio_dac'
+Slack : 499.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : -7.136
+TNS   : -304.232
+
+Type  : Slow 1100mV 0C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : -5.962
+TNS   : -148.792
+
+Type  : Slow 1100mV 0C Model Setup 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.974
+TNS   : -239.617
+
+Type  : Slow 1100mV 0C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : -4.570
+TNS   : -27.901
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.354
+TNS   : -792.691
+
+Type  : Slow 1100mV 0C Model Setup 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.062
+TNS   : -37.763
+
+Type  : Slow 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : -2.912
+TNS   : -91.152
+
+Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 10.440
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 16.746
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 17.363
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.801
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 30.956
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 32.989
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 36.109
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 36.561
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'freqgen_audio_dac'
+Slack : 45.512
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -1.312
+TNS   : -44.010
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.699
+TNS   : -27.068
+
+Type  : Slow 1100mV 0C Model Hold 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.158
+TNS   : -0.158
+
+Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'freqgen_audio_dac'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 0.609
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 0.651
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 0.766
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 1.057
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 1.437
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 1.991
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 2.284
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.840
+TNS   : -14.310
+
+Type  : Slow 1100mV 0C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : -3.812
+TNS   : -19.045
+
+Type  : Slow 1100mV 0C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : -3.279
+TNS   : -44.479
+
+Type  : Slow 1100mV 0C Model Recovery 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : -3.134
+TNS   : -3.134
+
+Type  : Slow 1100mV 0C Model Recovery 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.273
+TNS   : -9.080
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : 13.411
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.855
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 17.808
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'freqgen_audio_dac'
+Slack : 39.805
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.785
+TNS   : -2.003
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.782
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.842
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 2.584
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 2.737
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 3.259
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'freqgen_audio_dac'
+Slack : 51.570
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.255
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.906
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.264
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 18.417
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 18.787
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 18.818
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 18.829
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 18.845
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 18.850
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 18.870
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 18.888
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 18.916
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 18.919
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.171
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 19.346
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 19.407
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'freqgen_audio_dac'
+Slack : 499.071
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.385
+TNS   : -194.356
+
+Type  : Fast 1100mV 85C Model Setup 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : -3.551
+TNS   : -138.334
+
+Type  : Fast 1100mV 85C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : -2.883
+TNS   : -66.213
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.788
+TNS   : -482.843
+
+Type  : Fast 1100mV 85C Model Setup 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.370
+TNS   : -18.991
+
+Type  : Fast 1100mV 85C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : -2.014
+TNS   : -11.486
+
+Type  : Fast 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : -1.154
+TNS   : -36.095
+
+Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 12.301
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 17.586
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 18.213
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.327
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 33.507
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 35.138
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 37.191
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 37.257
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'freqgen_audio_dac'
+Slack : 47.360
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.482
+TNS   : -15.748
+
+Type  : Fast 1100mV 85C Model Hold 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.452
+TNS   : -8.922
+
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 0.122
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'freqgen_audio_dac'
+Slack : 0.220
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 0.575
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 1.001
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 1.009
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 1.208
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.762
+TNS   : -11.138
+
+Type  : Fast 1100mV 85C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : -1.852
+TNS   : -9.254
+
+Type  : Fast 1100mV 85C Model Recovery 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : -1.715
+TNS   : -1.715
+
+Type  : Fast 1100mV 85C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : -1.377
+TNS   : -18.335
+
+Type  : Fast 1100mV 85C Model Recovery 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : 15.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 17.759
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 18.956
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'freqgen_audio_dac'
+Slack : 42.829
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 1.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 1.737
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 1.739
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'freqgen_audio_dac'
+Slack : 50.827
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.389
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.478
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.392
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 18.373
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 18.768
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 19.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 19.069
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 19.089
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 19.117
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 19.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 19.131
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 19.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 19.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 19.287
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 19.452
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.526
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'freqgen_audio_dac'
+Slack : 499.315
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : -3.417
+TNS   : -132.694
+
+Type  : Fast 1100mV 0C Model Setup 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.402
+TNS   : -152.521
+
+Type  : Fast 1100mV 0C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : -2.658
+TNS   : -61.477
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.221
+TNS   : -378.771
+
+Type  : Fast 1100mV 0C Model Setup 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.094
+TNS   : -18.188
+
+Type  : Fast 1100mV 0C Model Setup 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : -1.877
+TNS   : -10.778
+
+Type  : Fast 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : -1.134
+TNS   : -35.583
+
+Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 12.535
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 17.718
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 18.279
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.359
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 34.172
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 35.495
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 37.302
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 37.419
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'freqgen_audio_dac'
+Slack : 47.466
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.674
+TNS   : -16.061
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.626
+TNS   : -26.981
+
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 0.101
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'freqgen_audio_dac'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 0.518
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 0.975
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 1.001
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 1.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.912
+TNS   : -8.602
+
+Type  : Fast 1100mV 0C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : -1.789
+TNS   : -8.941
+
+Type  : Fast 1100mV 0C Model Recovery 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : -1.714
+TNS   : -1.714
+
+Type  : Fast 1100mV 0C Model Recovery 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : -1.316
+TNS   : -17.631
+
+Type  : Fast 1100mV 0C Model Recovery 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.097
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : 15.744
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 19.174
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'freqgen_audio_dac'
+Slack : 43.603
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -0.314
+TNS   : -0.734
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 1.118
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 1.706
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 1.772
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'freqgen_audio_dac'
+Slack : 50.876
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.388
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.433
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.391
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg'
+Slack : 18.410
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 18.751
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 19.084
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 19.089
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy'
+Slack : 19.093
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_audio:audio|DE1_SoC_QSYS_audio_OUT_PAUSE:wrreq|data_out'
+Slack : 19.132
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 19.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'freq_divider:freq_divider_one_hertz_instance|out'
+Slack : 19.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 19.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_subsystem_w_histogram:audio_subsystem_inst|audio_subsystem:audio_subsystem_inst|audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 19.150
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_color_select:modulation_selector|data_out[0]'
+Slack : 19.334
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DE1_SoC_QSYS:U0|DE1_SoC_QSYS_signal_selector:signal_selector|data_out[2]'
+Slack : 19.451
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.529
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'freqgen_audio_dac'
+Slack : 499.369
+TNS   : 0.000
+
+------------------------------------------------------------
