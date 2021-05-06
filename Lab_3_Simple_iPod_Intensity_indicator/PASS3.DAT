@@ -1,0 +1,2292 @@
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; KCPSM3 Program - Practice Picoblaze on Spartan-3A Starter Kit.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; The 8 LEDs provide a simple 'heart beat' counter driven by interrupts generated at
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; one second intervals.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Port definitions
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_port
+   OPERAND2-80
+    COMMENT-;8 simple LEDs. Is an OUTPUT port.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-DATA_IN_PORT
+   OPERAND2-00
+    COMMENT-;input data port. this is an INPUT port.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-SSEG_PORT0
+   OPERAND2-40
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-SSEG_PORT1
+   OPERAND2-20
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-SSEG_PORT2
+   OPERAND2-10
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;//////define the port for the LED[0]
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_heartbeat
+   OPERAND2-08
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Special Register usage
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; No registers are given special names in this program.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Scratch Pad Memory Locations
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-ISR_preserve_s0
+   OPERAND2-00
+    COMMENT-;Preserve s0 contents during ISR
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-ISR_preserve_s1
+   OPERAND2-01
+    COMMENT-;Preserve s1 contents during ISR
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-ISR_preserve_s2
+   OPERAND2-02
+    COMMENT-;Preserve s2 contents during ISR
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-ISR_preserve_s3
+   OPERAND2-03
+    COMMENT-;Preserve s3 contents during ISR
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_pattern
+   OPERAND2-04
+    COMMENT-;remember state of LEDs (8-bit counter in this case)
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-counter
+   OPERAND2-05
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-hold_carry
+   OPERAND2-06
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-hold_sum
+   OPERAND2-07
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Useful data constants
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Constant to define a software delay of 1us. This must be adjusted to reflect the
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; clock applied to KCPSM3. Every instruction executes in 2 clock cycles making the
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; calculation highly predictable. The '6' in the following equation even allows for
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; 'CALL delay_1us' instruction in the initiating code.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; delay_1us_constant =  (clock_rate - 6)/4       Where 'clock_rate' is in MHz
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Example: For a 50MHz clock the constant value is (50-6)/4 = 11  (0B Hex).
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; For clock rates below 10MHz the value of 1 must be used and the operation will
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; become lower than intended. Interrupts may effect the timing of software based
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; delays.
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-delay_1us_constant
+   OPERAND2-0B
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; ASCII table
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_a
+   OPERAND2-61
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_b
+   OPERAND2-62
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_c
+   OPERAND2-63
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_d
+   OPERAND2-64
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_e
+   OPERAND2-65
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_f
+   OPERAND2-66
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_g
+   OPERAND2-67
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_h
+   OPERAND2-68
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_i
+   OPERAND2-69
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_j
+   OPERAND2-6A
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_k
+   OPERAND2-6B
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_l
+   OPERAND2-6C
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_m
+   OPERAND2-6D
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_n
+   OPERAND2-6E
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_o
+   OPERAND2-6F
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_p
+   OPERAND2-70
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_q
+   OPERAND2-71
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_r
+   OPERAND2-72
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_s
+   OPERAND2-73
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_t
+   OPERAND2-74
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_u
+   OPERAND2-75
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_v
+   OPERAND2-76
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_w
+   OPERAND2-77
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_x
+   OPERAND2-78
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_y
+   OPERAND2-79
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_z
+   OPERAND2-7A
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_A
+   OPERAND2-41
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_B
+   OPERAND2-42
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_C
+   OPERAND2-43
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_D
+   OPERAND2-44
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_E
+   OPERAND2-45
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_F
+   OPERAND2-46
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_G
+   OPERAND2-47
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_H
+   OPERAND2-48
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_I
+   OPERAND2-49
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_J
+   OPERAND2-4A
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_K
+   OPERAND2-4B
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_L
+   OPERAND2-4C
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_M
+   OPERAND2-4D
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_N
+   OPERAND2-4E
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_O
+   OPERAND2-4F
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_P
+   OPERAND2-50
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_Q
+   OPERAND2-51
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_R
+   OPERAND2-52
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_S
+   OPERAND2-53
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_T
+   OPERAND2-54
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_U
+   OPERAND2-55
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_V
+   OPERAND2-56
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_W
+   OPERAND2-57
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_X
+   OPERAND2-58
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_Y
+   OPERAND2-59
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_Z
+   OPERAND2-5A
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_0
+   OPERAND2-30
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_1
+   OPERAND2-31
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_2
+   OPERAND2-32
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_3
+   OPERAND2-33
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_4
+   OPERAND2-34
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_5
+   OPERAND2-35
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_6
+   OPERAND2-36
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_7
+   OPERAND2-37
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_8
+   OPERAND2-38
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_9
+   OPERAND2-39
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_colon
+   OPERAND2-3A
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_stop
+   OPERAND2-2E
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_semi_colon
+   OPERAND2-3B
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_minus
+   OPERAND2-2D
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_divide
+   OPERAND2-2F
+    COMMENT-;'/'
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_plus
+   OPERAND2-2B
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_comma
+   OPERAND2-2C
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_less_than
+   OPERAND2-3C
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_greater_than
+   OPERAND2-3E
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_equals
+   OPERAND2-3D
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_space
+   OPERAND2-20
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_CR
+   OPERAND2-0D
+    COMMENT-;carriage return
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_question
+   OPERAND2-3F
+    COMMENT-;'?'
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_dollar
+   OPERAND2-24
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_exclaim
+   OPERAND2-21
+    COMMENT-;'!'
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-character_BS
+   OPERAND2-08
+    COMMENT-;Back Space command character
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Initialise the system
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-000
+      LABEL-cold_start
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-00
+    COMMENT-
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s0
+   OPERAND2-LED_pattern
+    COMMENT-
+    ADDRESS-002
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-LED_port
+    COMMENT-
+    ADDRESS-003
+      LABEL-
+INSTRUCTION-ENABLE
+   OPERAND1-INTERRUPT
+   OPERAND2-
+    COMMENT-;enable the interrupt
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Main program
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Display welcome message for design
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-004
+      LABEL-main_program
+INSTRUCTION-CALL
+   OPERAND1-delay_1s
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-005
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Make the heart-beat on LED[0]
+    ADDRESS-005
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-006
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-LED_heartbeat
+    COMMENT-
+    ADDRESS-007
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay_1s
+   OPERAND2-
+    COMMENT-
+    ADDRESS-008
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-00
+    COMMENT-
+    ADDRESS-009
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-LED_heartbeat
+    COMMENT-
+    ADDRESS-00A
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-main_program
+   OPERAND2-
+    COMMENT-
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Routines to display hexadecimal values
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Convert hexadecimal value provided in register s0 into ASCII characters
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; The value provided must can be any value in the range 00 to FF and will be converted into
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; two ASCII characters.
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;     The upper nibble will be represented by an ASCII character returned in register s3.
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;     The lower nibble will be represented by an ASCII character returned in register s2.
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; The ASCII representations of '0' to '9' are 30 to 39 hexadecimal which is simply 30 hex
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; added to the actual decimal value. The ASCII representations of 'A' to 'F' are 41 to 46
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; hexadecimal requiring a further addition of 07 to the 30 already added.
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Registers used s0, s2 and s3.
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-00B
+      LABEL-hex_byte_to_ASCII
+INSTRUCTION-LOAD
+   OPERAND1-s2
+   OPERAND2-s0
+    COMMENT-;remember value supplied
+    ADDRESS-00C
+      LABEL-
+INSTRUCTION-SR0
+   OPERAND1-s0
+   OPERAND2-
+    COMMENT-;isolate upper nibble
+    ADDRESS-00D
+      LABEL-
+INSTRUCTION-SR0
+   OPERAND1-s0
+   OPERAND2-
+    COMMENT-
+    ADDRESS-00E
+      LABEL-
+INSTRUCTION-SR0
+   OPERAND1-s0
+   OPERAND2-
+    COMMENT-
+    ADDRESS-00F
+      LABEL-
+INSTRUCTION-SR0
+   OPERAND1-s0
+   OPERAND2-
+    COMMENT-
+    ADDRESS-010
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-hex_to_ASCII
+   OPERAND2-
+    COMMENT-;convert
+    ADDRESS-011
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s3
+   OPERAND2-s0
+    COMMENT-;upper nibble value in s3
+    ADDRESS-012
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-s2
+    COMMENT-;restore complete value
+    ADDRESS-013
+      LABEL-
+INSTRUCTION-AND
+   OPERAND1-s0
+   OPERAND2-0F
+    COMMENT-;isolate lower nibble
+    ADDRESS-014
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-hex_to_ASCII
+   OPERAND2-
+    COMMENT-;convert
+    ADDRESS-015
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s2
+   OPERAND2-s0
+    COMMENT-;lower nibble value in s2
+    ADDRESS-016
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-017
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-017
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Convert hexadecimal value provided in register s0 into ASCII character
+    ADDRESS-017
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-017
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Register used s0
+    ADDRESS-017
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-017
+      LABEL-hex_to_ASCII
+INSTRUCTION-SUB
+   OPERAND1-s0
+   OPERAND2-0A
+    COMMENT-;test if value is in range 0 to 9
+    ADDRESS-018
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-C
+   OPERAND2-number_char
+    COMMENT-
+    ADDRESS-019
+      LABEL-
+INSTRUCTION-ADD
+   OPERAND1-s0
+   OPERAND2-07
+    COMMENT-;ASCII char A to F in range 41 to 46
+    ADDRESS-01A
+      LABEL-number_char
+INSTRUCTION-ADD
+   OPERAND1-s0
+   OPERAND2-3A
+    COMMENT-;ASCII char 0 to 9 in range 30 to 40
+    ADDRESS-01B
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Software delay routines
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay of 1us.
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Constant value 'delay_1us_constant' reflects the clock applied to KCPSM3. Every
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; instruction executes in 2 clock cycles making the calculation highly predictable.
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; The '6' in the following equation allows for the 'CALL delay_1us' instruction used
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; in the initiating code. Interrupts may effect software derived delays.
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; delay_1us_constant =  (clock_rate - 6)/4       Where 'clock_rate' is in MHz
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Registers used s0
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-01C
+      LABEL-delay_1us
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-delay_1us_constant
+    COMMENT-
+    ADDRESS-01D
+      LABEL-wait_1us
+INSTRUCTION-SUB
+   OPERAND1-s0
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-01E
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-wait_1us
+    COMMENT-
+    ADDRESS-01F
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-020
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-020
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay of 40us.
+    ADDRESS-020
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-020
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Registers used s0, s1
+    ADDRESS-020
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-020
+      LABEL-delay_40us
+INSTRUCTION-LOAD
+   OPERAND1-s1
+   OPERAND2-28
+    COMMENT-;40 x 1us = 40us
+    ADDRESS-021
+      LABEL-wait_40us
+INSTRUCTION-CALL
+   OPERAND1-delay_1us
+   OPERAND2-
+    COMMENT-
+    ADDRESS-022
+      LABEL-
+INSTRUCTION-SUB
+   OPERAND1-s1
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-023
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-wait_40us
+    COMMENT-
+    ADDRESS-024
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay of 1ms.
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Registers used s0, s1, s2
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-025
+      LABEL-delay_1ms
+INSTRUCTION-LOAD
+   OPERAND1-s2
+   OPERAND2-19
+    COMMENT-;25 x 40us = 1ms
+    ADDRESS-026
+      LABEL-wait_1ms
+INSTRUCTION-CALL
+   OPERAND1-delay_40us
+   OPERAND2-
+    COMMENT-
+    ADDRESS-027
+      LABEL-
+INSTRUCTION-SUB
+   OPERAND1-s2
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-028
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-wait_1ms
+    COMMENT-
+    ADDRESS-029
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay of 20ms.
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay of 20ms used during initialisation.
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Registers used s0, s1, s2, s3
+    ADDRESS-02A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-02A
+      LABEL-delay_20ms
+INSTRUCTION-LOAD
+   OPERAND1-s3
+   OPERAND2-14
+    COMMENT-;20 x 1ms = 20ms
+    ADDRESS-02B
+      LABEL-wait_20ms
+INSTRUCTION-CALL
+   OPERAND1-delay_1ms
+   OPERAND2-
+    COMMENT-
+    ADDRESS-02C
+      LABEL-
+INSTRUCTION-SUB
+   OPERAND1-s3
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-02D
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-wait_20ms
+    COMMENT-
+    ADDRESS-02E
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-02F
+      LABEL-delay_100ms
+INSTRUCTION-LOAD
+   OPERAND1-s3
+   OPERAND2-64
+    COMMENT-;100 x 1ms = 20ms
+    ADDRESS-030
+      LABEL-wait_100ms
+INSTRUCTION-CALL
+   OPERAND1-delay_1ms
+   OPERAND2-
+    COMMENT-
+    ADDRESS-031
+      LABEL-
+INSTRUCTION-SUB
+   OPERAND1-s3
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-032
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-wait_100ms
+    COMMENT-
+    ADDRESS-033
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-034
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-034
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay of approximately 1 second.
+    ADDRESS-034
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-034
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Registers used s0, s1, s2, s3, s4
+    ADDRESS-034
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-034
+      LABEL-delay_1s
+INSTRUCTION-LOAD
+   OPERAND1-s4
+   OPERAND2-32
+    COMMENT-;50 x 20ms = 1000ms
+    ADDRESS-035
+      LABEL-wait_1s
+INSTRUCTION-CALL
+   OPERAND1-delay_20ms
+   OPERAND2-
+    COMMENT-
+    ADDRESS-036
+      LABEL-
+INSTRUCTION-SUB
+   OPERAND1-s4
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-037
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-wait_1s
+    COMMENT-
+    ADDRESS-038
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Interrupt Service Routine (ISR)
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; The interrupt is used purely to provide a 1 second heart beat binary counter pattern
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; on the 8 LEDs.
+    ADDRESS-039
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-039
+      LABEL-ISR
+INSTRUCTION-STORE
+   OPERAND1-s0
+   OPERAND2-ISR_preserve_s0
+    COMMENT-
+    ADDRESS-03A
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s1
+   OPERAND2-ISR_preserve_s1
+    COMMENT-;preserve register for the sum
+    ADDRESS-03B
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s2
+   OPERAND2-ISR_preserve_s2
+    COMMENT-;preserve register for audio_data+
+    ADDRESS-03C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;s3 is the second register that handles the carry 8 bits of the sum of the audio data
+    ADDRESS-03C
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s3
+   OPERAND2-ISR_preserve_s3
+    COMMENT-;preserve register for audio_data carry
+    ADDRESS-03D
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s1
+   OPERAND2-hold_sum
+    COMMENT-; get the stored sum_data value
+    ADDRESS-03E
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s3
+   OPERAND2-hold_carry
+    COMMENT-; get the stored carry value
+    ADDRESS-03F
+      LABEL-while
+INSTRUCTION-INPUT
+   OPERAND1-s2
+   OPERAND2-DATA_IN_PORT
+    COMMENT-
+    ADDRESS-040
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s7
+   OPERAND2-s2
+    COMMENT-
+    ADDRESS-041
+      LABEL-
+INSTRUCTION-AND
+   OPERAND1-s7
+   OPERAND2-80
+    COMMENT-; check the if the most significant bit is 1
+    ADDRESS-042
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s7
+   OPERAND2-80
+    COMMENT-
+    ADDRESS-043
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-Z
+   OPERAND2-find_absolute
+    COMMENT-; if MSB is 1, it is an negative data
+    ADDRESS-044
+      LABEL-
+INSTRUCTION-ADD
+   OPERAND1-s1
+   OPERAND2-s2
+    COMMENT-;add the data_audio to sum
+    ADDRESS-045
+      LABEL-
+INSTRUCTION-ADDCY
+   OPERAND1-s3
+   OPERAND2-00
+    COMMENT-;the carry bits
+    ADDRESS-046
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s5
+   OPERAND2-FF
+    COMMENT-;check if counter is d'256
+    ADDRESS-047
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-Z
+   OPERAND2-end_loop
+    COMMENT-
+    ADDRESS-048
+      LABEL-
+INSTRUCTION-ADD
+   OPERAND1-s5
+   OPERAND2-01
+    COMMENT-;start counting
+    ADDRESS-049
+      LABEL-end_interrupt
+INSTRUCTION-STORE
+   OPERAND1-s0
+   OPERAND2-ISR_preserve_s0
+    COMMENT-
+    ADDRESS-04A
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s1
+   OPERAND2-hold_sum
+    COMMENT-
+    ADDRESS-04B
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s3
+   OPERAND2-hold_carry
+    COMMENT-
+    ADDRESS-04C
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s0
+   OPERAND2-ISR_preserve_s0
+    COMMENT-
+    ADDRESS-04D
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s1
+   OPERAND2-ISR_preserve_s1
+    COMMENT-
+    ADDRESS-04E
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s2
+   OPERAND2-ISR_preserve_s2
+    COMMENT-
+    ADDRESS-04F
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s3
+   OPERAND2-ISR_preserve_s3
+    COMMENT-
+    ADDRESS-050
+      LABEL-
+INSTRUCTION-RETURNI
+   OPERAND1-ENABLE
+   OPERAND2-
+    COMMENT-
+    ADDRESS-051
+      LABEL-find_absolute
+INSTRUCTION-XOR
+   OPERAND1-s2
+   OPERAND2-FF
+    COMMENT-
+    ADDRESS-052
+      LABEL-
+INSTRUCTION-ADD
+   OPERAND1-s2
+   OPERAND2-01
+    COMMENT-
+    ADDRESS-053
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-054
+      LABEL-end_loop
+INSTRUCTION-LOAD
+   OPERAND1-s5
+   OPERAND2-00
+    COMMENT-;initialize the counter
+    ADDRESS-055
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Since s3 is the UPPER 8 bits of the sum, so we only need to compare s3. Becasue
+    ADDRESS-055
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;divided by 256 means shift 8 bits RIGHT
+    ADDRESS-055
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-80
+    COMMENT-; compare with 1000_0000
+    ADDRESS-056
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_eight
+    COMMENT-
+    ADDRESS-057
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-40
+    COMMENT-; compare with 0100_0000
+    ADDRESS-058
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_seven
+    COMMENT-
+    ADDRESS-059
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-20
+    COMMENT-; compare with 0010_0000
+    ADDRESS-05A
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_six
+    COMMENT-
+    ADDRESS-05B
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-10
+    COMMENT-; compare with 0001_0000
+    ADDRESS-05C
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_five
+    COMMENT-
+    ADDRESS-05D
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-08
+    COMMENT-; compare with 0000_1000
+    ADDRESS-05E
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_four
+    COMMENT-
+    ADDRESS-05F
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-04
+    COMMENT-; compare with 0000_0100
+    ADDRESS-060
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_three
+    COMMENT-
+    ADDRESS-061
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-02
+    COMMENT-; compare with 0000_0010
+    ADDRESS-062
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-light_up_two
+    COMMENT-
+    ADDRESS-063
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s3
+   OPERAND2-01
+    COMMENT-; compare with 0000_0001
+    ADDRESS-064
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-Z
+   OPERAND2-light_up_one
+    COMMENT-
+    ADDRESS-065
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-00
+    COMMENT-
+    ADDRESS-066
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-067
+      LABEL-light_up_eight
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-067
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-FF
+    COMMENT-;1111_1111
+    ADDRESS-068
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-069
+      LABEL-light_up_seven
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-069
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-FE
+    COMMENT-;1111_1110
+    ADDRESS-06A
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-06B
+      LABEL-light_up_six
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-06B
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-FC
+    COMMENT-;1111_1100
+    ADDRESS-06C
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-06D
+      LABEL-light_up_five
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-06D
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-F8
+    COMMENT-;1111_1000
+    ADDRESS-06E
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-06F
+      LABEL-light_up_four
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-06F
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-F0
+    COMMENT-;1111_0000
+    ADDRESS-070
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-071
+      LABEL-light_up_three
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-071
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-E0
+    COMMENT-;1110_0000
+    ADDRESS-072
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-073
+      LABEL-light_up_two
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-073
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-C0
+    COMMENT-;1100_0000
+    ADDRESS-074
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-075
+      LABEL-light_up_one
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-075
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-80
+    COMMENT-;1000_0000
+    ADDRESS-076
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-display_leds
+   OPERAND2-
+    COMMENT-
+    ADDRESS-077
+      LABEL-display_leds
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-077
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-LED_port
+    COMMENT-;display the LEDs
+    ADDRESS-078
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s1
+   OPERAND2-00
+    COMMENT-;reset the sum of data
+    ADDRESS-079
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s1
+   OPERAND2-hold_sum
+    COMMENT-
+    ADDRESS-07A
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s3
+   OPERAND2-00
+    COMMENT-;reset the carry
+    ADDRESS-07B
+      LABEL-
+INSTRUCTION-STORE
+   OPERAND1-s3
+   OPERAND2-hold_carry
+    COMMENT-
+    ADDRESS-07C
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s0
+   OPERAND2-ISR_preserve_s0
+    COMMENT-;restore register
+    ADDRESS-07D
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s1
+   OPERAND2-ISR_preserve_s1
+    COMMENT-;restore the sum
+    ADDRESS-07E
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s2
+   OPERAND2-ISR_preserve_s2
+    COMMENT-;restore register
+    ADDRESS-07F
+      LABEL-
+INSTRUCTION-FETCH
+   OPERAND1-s3
+   OPERAND2-ISR_preserve_s3
+    COMMENT-;restore the carry
+    ADDRESS-080
+      LABEL-
+INSTRUCTION-RETURNI
+   OPERAND1-ENABLE
+   OPERAND2-
+    COMMENT-
+    ADDRESS-081
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-081
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-081
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-081
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Interrupt Vector
+    ADDRESS-081
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;**************************************************************************************
+    ADDRESS-081
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-ADDRESS
+   OPERAND1-3FF
+   OPERAND2-
+    COMMENT-
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-ISR
+   OPERAND2-
+    COMMENT-
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;

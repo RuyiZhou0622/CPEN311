@@ -1,0 +1,33 @@
+Table of addresses and their specified labels.
+
+000  cold_start
+004  main_program
+00B  hex_byte_to_ASCII
+017  hex_to_ASCII
+01A  number_char
+01C  delay_1us
+01D  wait_1us
+020  delay_40us
+021  wait_40us
+025  delay_1ms
+026  wait_1ms
+02A  delay_20ms
+02B  wait_20ms
+02F  delay_100ms
+030  wait_100ms
+034  delay_1s
+035  wait_1s
+039  ISR
+03F  while
+049  end_interrupt
+051  find_absolute
+054  end_loop
+067  light_up_eight
+069  light_up_seven
+06B  light_up_six
+06D  light_up_five
+06F  light_up_four
+071  light_up_three
+073  light_up_two
+075  light_up_one
+077  display_leds
