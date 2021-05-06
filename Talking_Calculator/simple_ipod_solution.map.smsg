@@ -1,0 +1,19 @@
+Warning (10268): Verilog HDL information at clk_divider_spd_controller.sv(18): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at led_control.sv(20): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "A" differs only in case from object "a" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "B" differs only in case from object "b" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "C" differs only in case from object "c" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "D" differs only in case from object "d" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "E" differs only in case from object "e" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "F" differs only in case from object "f" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "G" differs only in case from object "g" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "H" differs only in case from object "h" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "a" differs only in case from object "A" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "b" differs only in case from object "B" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "c" differs only in case from object "C" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "d" differs only in case from object "D" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "e" differs only in case from object "E" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "f" differs only in case from object "F" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "g" differs only in case from object "G" in the same scope
+Info (10281): Verilog HDL Declaration information at decoder_8b10b.v(98): object "h" differs only in case from object "H" in the same scope
+Warning (10273): Verilog HDL warning at picoblaze_template.v(137): extended using "x" or "z"
