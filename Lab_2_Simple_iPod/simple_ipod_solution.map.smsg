@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clk_divider_spd_controller.sv(18): always construct contains both blocking and non-blocking assignments

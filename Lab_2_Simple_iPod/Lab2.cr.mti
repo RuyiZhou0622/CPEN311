@@ -1,0 +1,57 @@
+D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/Read_Data.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/Read_Data.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module Read_Data
+
+Top level modules:
+	Read_Data
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/clk_divider_spd_controller.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/clk_divider_spd_controller.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module clk_divider_spd_controller
+
+Top level modules:
+	clk_divider_spd_controller
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/Flash_handle.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/Flash_handle.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module Flash_handle
+
+Top level modules:
+	Flash_handle
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/keyboard.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/keyboard.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module keyboard
+
+Top level modules:
+	keyboard
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_Read_Data.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_Read_Data.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module tb_Read_Data
+
+Top level modules:
+	tb_Read_Data
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_keyboard.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_keyboard.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module tb_keyboard
+
+Top level modules:
+	tb_keyboard
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_Flash_handle.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_Flash_handle.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module tb_Flash_handle
+
+Top level modules:
+	tb_Flash_handle
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_clk_divider_spd_controller.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/tb_clk_divider_spd_controller.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module tb_clk_divider_spd_controller
+
+Top level modules:
+	tb_clk_divider_spd_controller
+
+} {} {}}
