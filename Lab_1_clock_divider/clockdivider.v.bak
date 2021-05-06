@@ -1,0 +1,38 @@
+
+module clockdivider (clkin,clkout,divider);
+    input clkin;
+    input [31:0] divider;
+    'output reg clkout;
+    reg [31:0] count;
+    reg compare;
+    
+ 
+    //Check if the counter is greater than the HALF of the divbisor
+    //The divisor is halfed because the clcok has 2 output values: 1 and 0.
+    assign compare = count < (divider/2);
+
+    always @ (posedge clkin) begin
+        
+        count <= count + 1; //start to count the number
+
+        //If the count is added to equal the divisor. Start to re_count from 0.
+        if(count==(divider -1))begin
+            count <= 0;
+        end
+
+        // Seperate the time to 2 equal amount. 
+        // One of them outputs the value 1.
+        // The other one outputs the value 0.
+        case (compare) 
+            1'b1: begin
+                clkout <=1'b1;
+            end
+            1'b0: begin
+                clkout <=1'b0;
+            end
+            default: compare <= 1'b1;
+        endcase
+    end
+
+endmodule
+

@@ -1,0 +1,50 @@
+{D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/clockdivider.sv} {1 {vlog -work work -sv -stats=none {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/clockdivider.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module clockdivider
+
+Top level modules:
+	clockdivider
+
+} {} {}} {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/testbench.sv} {1 {vlog -work work -sv -stats=none {D:\Y3 2021W\CPEN311\Lab1\lab1_template_de1soc\lab1_template_de1soc\testbench.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/testbench_ToneOrgan.sv} {1 {vlog -work work -sv -stats=none {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/testbench_ToneOrgan.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module testbench_ToneOrgan
+
+Top level modules:
+	testbench_ToneOrgan
+
+} {} {}} {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/testbench_LED.sv} {1 {vlog -work work -sv -stats=none {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/testbench_LED.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module testbench_LED
+
+Top level modules:
+	testbench_LED
+
+} {} {}} {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/ToneOrgan.sv} {1 {vlog -work work -sv -stats=none {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/ToneOrgan.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module ToneOrgan
+
+Top level modules:
+	ToneOrgan
+
+} {} {}} {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/testbench_divider.sv} {1 {vlog -work work -sv -stats=none {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/testbench_divider.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module testbench_divider
+
+Top level modules:
+	testbench_divider
+
+} {} {}} {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/flashLEDs.sv} {1 {vlog -work work -sv -stats=none {D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/rtl/flashLEDs.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module flashLEDs
+
+Top level modules:
+	flashLEDs
+
+} {} {}}

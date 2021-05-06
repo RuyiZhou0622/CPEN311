@@ -1,0 +1,5 @@
+# vsim 25> do LED2.do 
+# Start time: 19:36:12 on Jan 28,2021
+# ** Error: (vsim-3170) Could not find 'D:/Y3 2021W/CPEN311/Lab1/lab1_template_de1soc/lab1_template_de1soc/work.25>'.
+# 
+# Error loading design
