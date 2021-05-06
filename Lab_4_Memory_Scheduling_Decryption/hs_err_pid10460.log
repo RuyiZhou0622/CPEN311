@@ -1,0 +1,326 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (signature.cpp:53), pid=10460, tid=3068
+#  fatal error: expecting (
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_05-b13) (build 1.8.0_05-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000027b5800):  JavaThread "main" [_thread_in_vm, id=3068, stack(0x00000000026b0000,0x00000000027b0000)]
+
+Stack: [0x00000000026b0000,0x00000000027b0000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x308dea]
+V  [jvm.dll+0x25def1]
+V  [jvm.dll+0x25eb0f]
+V  [jvm.dll+0x256466]
+V  [jvm.dll+0x2149c6]
+V  [jvm.dll+0x214a1f]
+V  [jvm.dll+0x1ed930]
+V  [jvm.dll+0xabc00]
+C  0x00000000028d06ac
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Lcom/sun/org/apache/xerces/internal/xni/QName;Lcom/sun/org/apache/xerces/internal/xni/XMLAttributes;Lcom/sun/org/apache/xerces/internal/xni/Augmentations;)V+4
+j  com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement()Z+942
+J 697 C1 com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next()I (2345 bytes) @ 0x0000000002ba1044 [0x0000000002b9ccc0+0x4384]
+J 684 C1 com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next()I (39 bytes) @ 0x0000000002b9485c [0x0000000002b945e0+0x27c]
+j  com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Z)Z+238
+j  com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Z)Z+123
+j  com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Lcom/sun/org/apache/xerces/internal/xni/parser/XMLInputSource;)V+29
+j  com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Lcom/sun/org/apache/xerces/internal/xni/parser/XMLInputSource;)V+76
+j  com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Lorg/xml/sax/InputSource;)V+43
+j  com.altera.utilities.altNode.AltNodeXML$AltNodeXMLParser.parse(Ljava/lang/String;)V+48
+j  com.altera.utilities.altNode.AltNodeXML.readXML(Lcom/altera/utilities/altNode/AltNodeXML$IAltNodeXMLFilter;)Lcom/altera/utilities/altNode/AltNode;+49
+j  com.altera.utilities.altNode.AltNodeXML.xmlFromInputStream(Ljava/io/InputStream;Ljava/lang/String;Lcom/altera/utilities/altNode/AltNodeXML$IAltNodeXMLFilter;)Lcom/altera/utilities/altNode/AltNode;+12
+j  com.altera.utilities.altNode.AltNodeXML.xmlFromInputStream(Ljava/io/InputStream;Ljava/lang/String;)Lcom/altera/utilities/altNode/AltNode;+3
+j  com.altera.utilities.altNode.AltNodeXML.xmlFromFileOrURL(Ljava/lang/String;)Lcom/altera/utilities/altNode/AltNode;+80
+j  com.altera.sopclibrary.conan.Analyzer.analyzeIpxFile(Ljava/lang/String;Ljava/lang/String;Lcom/altera/sopclibrary/conan/Analyzer$IAnalyzerResults;Ljava/util/Map;Lcom/altera/entityinterfaces/message/IMessageLogger;)Z+94
+j  com.altera.sopclibrary.conan.Analyzer$1.oneDirectory(Ljava/util/List;Ljava/util/List;)Z+79
+j  com.altera.utilities.AltFileTraverser.searchDirectory(Ljava/lang/String;Ljava/lang/String;Lcom/altera/utilities/AltFileTraverser$ITraverserGatherer;)V+111
+j  com.altera.utilities.AltFileTraverser.searchDirectory(Ljava/lang/String;Ljava/lang/String;Lcom/altera/utilities/AltFileTraverser$ITraverserGatherer;)V+176
+j  com.altera.utilities.AltFileTraverser.searchDirectory(Ljava/lang/String;Lcom/altera/utilities/AltFileTraverser$ITraverserGatherer;)V+86
+j  com.altera.sopclibrary.conan.Analyzer.analyzeInner(Ljava/lang/String;Lcom/altera/sopclibrary/conan/Analyzer$IAnalyzerResults;Ljava/util/Map;Lcom/altera/entityinterfaces/message/IMessageLogger;)I+153
+j  com.altera.sopclibrary.conan.Analyzer.do1PathNode(Lcom/altera/sopclibrary/conan/Analyzer$IAnalyzerResults;Ljava/util/Map;Lcom/altera/entityinterfaces/message/IMessageLogger;Ljava/lang/String;Lcom/altera/utilities/altNode/AltNode;)Z+202
+j  com.altera.sopclibrary.conan.Analyzer.analyzeIpxFile(Ljava/lang/String;Ljava/lang/String;Lcom/altera/sopclibrary/conan/Analyzer$IAnalyzerResults;Ljava/util/Map;Lcom/altera/entityinterfaces/message/IMessageLogger;)Z+285
+j  com.altera.sopclibrary.conan.Analyzer$1.oneDirectory(Ljava/util/List;Ljava/util/List;)Z+79
+j  com.altera.utilities.AltFileTraverser.searchDirectory(Ljava/lang/String;Lcom/altera/utilities/AltFileTraverser$ITraverserGatherer;)V+66
+j  com.altera.sopclibrary.conan.Analyzer.analyzeInner(Ljava/lang/String;Lcom/altera/sopclibrary/conan/Analyzer$IAnalyzerResults;Ljava/util/Map;Lcom/altera/entityinterfaces/message/IMessageLogger;)I+153
+j  com.altera.sopclibrary.conan.Analyzer.analyze(Ljava/lang/String;Lcom/altera/sopclibrary/conan/Analyzer$IAnalyzerResults;Lcom/altera/entityinterfaces/message/IMessageLogger;)I+16
+j  com.altera.sopclibrary.conan.Conan.addPluginsInner(Lcom/altera/sopclibrary/conan/Conan$PathInfo;Lcom/altera/entityinterfaces/message/IMessageLogger;)I+37
+j  com.altera.sopclibrary.conan.Conan.addPlugins(Lcom/altera/sopclibrary/conan/Conan$PathInfo;Lcom/altera/entityinterfaces/message/IMessageLogger;)I+8
+j  com.altera.sopclibrary.conan.Conan.addAllPlugins(Lcom/altera/entityinterfaces/message/IMessageLogger;)I+126
+j  com.altera.sopclibrary.conan.Conan.startCataloging(Lcom/altera/entityinterfaces/message/IMessageLogger;)V+2
+j  com.altera.sopcplatform.librarian.LibrarianUtils.createLibrarian90(Lcom/altera/entityinterfaces/message/IMessageLogger;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lcom/altera/sopclibrary/conan/Conan;+457
+j  com.altera.sopcplatform.librarian.LibrarianUtils.createLibrarian(Lcom/altera/entityinterfaces/message/IMessageLogger;Ljava/lang/String;[Ljava/lang/String;)Lcom/altera/sopclibrary/conan/Conan;+11
+j  com.altera.sopcmodel.sbtools.sbcatalog.SbCatalog.act()I+274
+j  com.altera.utilities.AltCmdLineToolBase.runTheTool([Ljava/lang/String;)I+38
+j  com.altera.sopcmodel.sbtools.sbcatalog.SbCatalog.main([Ljava/lang/String;)V+10
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000012ae0800 JavaThread "Service Thread" daemon [_thread_blocked, id=16216, stack(0x00000000134a0000,0x00000000135a0000)]
+  0x0000000012a64800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=11880, stack(0x00000000133a0000,0x00000000134a0000)]
+  0x0000000012a5b000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=2124, stack(0x00000000132a0000,0x00000000133a0000)]
+  0x0000000012a59800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=14848, stack(0x00000000131a0000,0x00000000132a0000)]
+  0x0000000012a58000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=9500, stack(0x00000000130a0000,0x00000000131a0000)]
+  0x0000000012a53800 JavaThread "Attach Listener" daemon [_thread_blocked, id=8556, stack(0x0000000012fa0000,0x00000000130a0000)]
+  0x0000000012a61000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6612, stack(0x0000000012ea0000,0x0000000012fa0000)]
+  0x0000000012a16800 JavaThread "Finalizer" daemon [_thread_blocked, id=10228, stack(0x0000000012d60000,0x0000000012e60000)]
+  0x0000000012a0f000 JavaThread "Reference Handler" daemon [_thread_blocked, id=6816, stack(0x0000000012c60000,0x0000000012d60000)]
+=>0x00000000027b5800 JavaThread "main" [_thread_in_vm, id=3068, stack(0x00000000026b0000,0x00000000027b0000)]
+
+Other Threads:
+  0x0000000012a08800 VMThread [stack: 0x0000000012b60000,0x0000000012c60000] [id=16652]
+  0x0000000012ae6000 WatcherThread [stack: 0x00000000135a0000,0x00000000136a0000] [id=15280]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ def new generation   total 1152K, used 540K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,  46% used [0x00000000a2400000, 0x00000000a24772f8, 0x00000000a2500000)
+  from space 128K,  50% used [0x00000000a2520000, 0x00000000a2530018, 0x00000000a2540000)
+  to   space 128K,   0% used [0x00000000a2500000, 0x00000000a2500000, 0x00000000a2520000)
+ tenured generation   total 260864K, used 4040K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1bf2130, 0x00000000c1bf2200, 0x00000000d16c0000)
+ Metaspace       used 7746K, capacity 7992K, committed 8192K, reserved 1056768K
+  class space    used 854K, capacity 900K, committed 1024K, reserved 1048576K
+
+Card table byte_map: [0x0000000011c70000,0x0000000011f60000] byte_map_base: 0x000000001175e000
+
+Polling page: 0x0000000000ce0000
+
+CodeCache: size=245760Kb used=3188Kb max_used=3202Kb free=242571Kb
+ bounds [0x00000000028b0000, 0x0000000002be0000, 0x00000000118b0000]
+ total_blobs=1079 nmethods=775 adapters=219
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.331 Thread 0x0000000012a64800 nmethod 772 0x0000000002bcd090 code [0x0000000002bcd220, 0x0000000002bcd598]
+Event: 0.331 Thread 0x0000000012a64800  775       3       com.altera.utilities.altNode.AltNode$Builder::addChild (51 bytes)
+Event: 0.331 Thread 0x0000000012a64800 nmethod 775 0x0000000002bcc9d0 code [0x0000000002bccb60, 0x0000000002bcce48]
+Event: 0.331 Thread 0x0000000012a64800  776       3       com.altera.utilities.altNode.AltNode::setXmlWhiteSpace (6 bytes)
+Event: 0.332 Thread 0x0000000012a64800 nmethod 776 0x0000000002bcc690 code [0x0000000002bcc7e0, 0x0000000002bcc930]
+Event: 0.332 Thread 0x0000000012a64800  773       3       com.sun.org.apache.xerces.internal.xni.QName::clear (21 bytes)
+Event: 0.332 Thread 0x0000000012a64800 nmethod 773 0x0000000002bcc350 code [0x0000000002bcc4a0, 0x0000000002bcc630]
+Event: 0.332 Thread 0x0000000012a64800  774       3       com.sun.org.apache.xerces.internal.xni.QName::<init> (9 bytes)
+Event: 0.332 Thread 0x0000000012a64800 nmethod 774 0x0000000002bcbed0 code [0x0000000002bcc040, 0x0000000002bcc290]
+Event: 0.333 Thread 0x0000000012a59800 nmethod 757 0x0000000002bd18d0 code [0x0000000002bd1ac0, 0x0000000002bd23b0]
+
+GC Heap History (10 events):
+Event: 0.282 GC heap before
+{Heap before GC invocations=26 (full 0):
+ def new generation   total 1152K, used 1059K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,  98% used [0x00000000a2400000, 0x00000000a24fd148, 0x00000000a2500000)
+  from space 128K,  36% used [0x00000000a2500000, 0x00000000a250bcd0, 0x00000000a2520000)
+  to   space 128K,   0% used [0x00000000a2520000, 0x00000000a2520000, 0x00000000a2540000)
+ tenured generation   total 260864K, used 3460K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b612f0, 0x00000000c1b61400, 0x00000000d16c0000)
+ Metaspace       used 6260K, capacity 6648K, committed 6784K, reserved 1056768K
+  class space    used 689K, capacity 772K, committed 896K, reserved 1048576K
+Event: 0.283 GC heap after
+Heap after GC invocations=27 (full 0):
+ def new generation   total 1152K, used 74K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a2500000)
+  from space 128K,  58% used [0x00000000a2520000, 0x00000000a2532b50, 0x00000000a2540000)
+  to   space 128K,   0% used [0x00000000a2500000, 0x00000000a2500000, 0x00000000a2520000)
+ tenured generation   total 260864K, used 3460K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b612f0, 0x00000000c1b61400, 0x00000000d16c0000)
+ Metaspace       used 6260K, capacity 6648K, committed 6784K, reserved 1056768K
+  class space    used 689K, capacity 772K, committed 896K, reserved 1048576K
+}
+Event: 0.290 GC heap before
+{Heap before GC invocations=27 (full 0):
+ def new generation   total 1152K, used 1098K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K, 100% used [0x00000000a2400000, 0x00000000a2500000, 0x00000000a2500000)
+  from space 128K,  58% used [0x00000000a2520000, 0x00000000a2532b50, 0x00000000a2540000)
+  to   space 128K,   0% used [0x00000000a2500000, 0x00000000a2500000, 0x00000000a2520000)
+ tenured generation   total 260864K, used 3460K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b612f0, 0x00000000c1b61400, 0x00000000d16c0000)
+ Metaspace       used 6454K, capacity 6776K, committed 7040K, reserved 1056768K
+  class space    used 705K, capacity 772K, committed 896K, reserved 1048576K
+Event: 0.290 GC heap after
+Heap after GC invocations=28 (full 0):
+ def new generation   total 1152K, used 127K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a2500000)
+  from space 128K,  99% used [0x00000000a2500000, 0x00000000a251ffd0, 0x00000000a2520000)
+  to   space 128K,   0% used [0x00000000a2520000, 0x00000000a2520000, 0x00000000a2540000)
+ tenured generation   total 260864K, used 3576K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b7e200, 0x00000000c1b7e200, 0x00000000d16c0000)
+ Metaspace       used 6454K, capacity 6776K, committed 7040K, reserved 1056768K
+  class space    used 705K, capacity 772K, committed 896K, reserved 1048576K
+}
+Event: 0.303 GC heap before
+{Heap before GC invocations=28 (full 0):
+ def new generation   total 1152K, used 1150K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,  99% used [0x00000000a2400000, 0x00000000a24ffaa0, 0x00000000a2500000)
+  from space 128K,  99% used [0x00000000a2500000, 0x00000000a251ffd0, 0x00000000a2520000)
+  to   space 128K,   0% used [0x00000000a2520000, 0x00000000a2520000, 0x00000000a2540000)
+ tenured generation   total 260864K, used 3576K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b7e200, 0x00000000c1b7e200, 0x00000000d16c0000)
+ Metaspace       used 7265K, capacity 7512K, committed 7552K, reserved 1056768K
+  class space    used 805K, capacity 868K, committed 896K, reserved 1048576K
+Event: 0.304 GC heap after
+Heap after GC invocations=29 (full 0):
+ def new generation   total 1152K, used 127K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a2500000)
+  from space 128K,  99% used [0x00000000a2520000, 0x00000000a253fff0, 0x00000000a2540000)
+  to   space 128K,   0% used [0x00000000a2500000, 0x00000000a2500000, 0x00000000a2520000)
+ tenured generation   total 260864K, used 3655K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b91f98, 0x00000000c1b92000, 0x00000000d16c0000)
+ Metaspace       used 7265K, capacity 7512K, committed 7552K, reserved 1056768K
+  class space    used 805K, capacity 868K, committed 896K, reserved 1048576K
+}
+Event: 0.319 GC heap before
+{Heap before GC invocations=29 (full 0):
+ def new generation   total 1152K, used 1151K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K, 100% used [0x00000000a2400000, 0x00000000a2500000, 0x00000000a2500000)
+  from space 128K,  99% used [0x00000000a2520000, 0x00000000a253fff0, 0x00000000a2540000)
+  to   space 128K,   0% used [0x00000000a2500000, 0x00000000a2500000, 0x00000000a2520000)
+ tenured generation   total 260864K, used 3655K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1b91f98, 0x00000000c1b92000, 0x00000000d16c0000)
+ Metaspace       used 7688K, capacity 7928K, committed 8192K, reserved 1056768K
+  class space    used 850K, capacity 900K, committed 1024K, reserved 1048576K
+Event: 0.320 GC heap after
+Heap after GC invocations=30 (full 0):
+ def new generation   total 1152K, used 128K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a2500000)
+  from space 128K, 100% used [0x00000000a2500000, 0x00000000a2520000, 0x00000000a2520000)
+  to   space 128K,   0% used [0x00000000a2520000, 0x00000000a2520000, 0x00000000a2540000)
+ tenured generation   total 260864K, used 3912K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1bd22d8, 0x00000000c1bd2400, 0x00000000d16c0000)
+ Metaspace       used 7688K, capacity 7928K, committed 8192K, reserved 1056768K
+  class space    used 850K, capacity 900K, committed 1024K, reserved 1048576K
+}
+Event: 0.325 GC heap before
+{Heap before GC invocations=30 (full 0):
+ def new generation   total 1152K, used 1152K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K, 100% used [0x00000000a2400000, 0x00000000a2500000, 0x00000000a2500000)
+  from space 128K, 100% used [0x00000000a2500000, 0x00000000a2520000, 0x00000000a2520000)
+  to   space 128K,   0% used [0x00000000a2520000, 0x00000000a2520000, 0x00000000a2540000)
+ tenured generation   total 260864K, used 3912K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1bd22d8, 0x00000000c1bd2400, 0x00000000d16c0000)
+ Metaspace       used 7704K, capacity 7928K, committed 8192K, reserved 1056768K
+  class space    used 850K, capacity 900K, committed 1024K, reserved 1048576K
+Event: 0.326 GC heap after
+Heap after GC invocations=31 (full 0):
+ def new generation   total 1152K, used 64K [0x00000000a2400000, 0x00000000a2540000, 0x00000000c1800000)
+  eden space 1024K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a2500000)
+  from space 128K,  50% used [0x00000000a2520000, 0x00000000a2530018, 0x00000000a2540000)
+  to   space 128K,   0% used [0x00000000a2500000, 0x00000000a2500000, 0x00000000a2520000)
+ tenured generation   total 260864K, used 4040K [0x00000000c1800000, 0x00000000d16c0000, 0x0000000100000000)
+   the space 260864K,   1% used [0x00000000c1800000, 0x00000000c1bf2130, 0x00000000c1bf2200, 0x00000000d16c0000)
+ Metaspace       used 7704K, capacity 7928K, committed 8192K, reserved 1056768K
+  class space    used 850K, capacity 900K, committed 1024K, reserved 1048576K
+}
+
+Deoptimization events (8 events):
+Event: 0.195 Thread 0x00000000027b5800 Uncommon trap: reason=unloaded action=reinterpret pc=0x0000000002a9f994 method=sun.misc.URLClassPath$JarLoader.getResource(Ljava/lang/String;Z)Lsun/misc/Resource; @ 67
+Event: 0.276 Thread 0x00000000027b5800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000000002b48da0 method=java.util.regex.Pattern$CharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 37
+Event: 0.276 Thread 0x00000000027b5800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000000002b48da0 method=java.util.regex.Pattern$CharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 37
+Event: 0.276 Thread 0x00000000027b5800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000000002b48da0 method=java.util.regex.Pattern$CharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 37
+Event: 0.276 Thread 0x00000000027b5800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000000002b48da0 method=java.util.regex.Pattern$CharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 37
+Event: 0.295 Thread 0x00000000027b5800 Uncommon trap: reason=unreached action=reinterpret pc=0x0000000002a82f18 method=java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; @ 1
+Event: 0.328 Thread 0x00000000027b5800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000000002bc4488 method=java.util.regex.Pattern$Curly.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 19
+Event: 0.329 Thread 0x00000000027b5800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x0000000002bc4488 method=java.util.regex.Pattern$Curly.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 19
+
+Internal exceptions (10 events):
+Event: 0.303 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a24ee030) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.304 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2406930) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.304 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2410d20) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.307 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2443930) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.310 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a246dba0) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.311 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a24752a8) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.316 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a24a40c8) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.316 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a24be3c0) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.317 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a24c9c78) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+Event: 0.329 Thread 0x00000000027b5800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a244b040) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u5\2488\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
+
+Events (10 events):
+Event: 0.328 loading class sun/misc/FormattedFloatingDecimal$2
+Event: 0.328 loading class sun/misc/FormattedFloatingDecimal$2 done
+Event: 0.328 Thread 0x00000000027b5800 Uncommon trap: trap_request=0xffffffc6 fr.pc=0x0000000002bc4488
+Event: 0.328 Thread 0x00000000027b5800 DEOPT PACKING pc=0x0000000002bc4488 sp=0x00000000027ae260
+Event: 0.329 Thread 0x00000000027b5800 DEOPT UNPACKING pc=0x00000000028f73ef sp=0x00000000027ae208 mode 2
+Event: 0.329 Thread 0x00000000027b5800 Uncommon trap: trap_request=0xffffffc6 fr.pc=0x0000000002bc4488
+Event: 0.329 Thread 0x00000000027b5800 DEOPT PACKING pc=0x0000000002bc4488 sp=0x00000000027ae260
+Event: 0.329 Thread 0x00000000027b5800 DEOPT UNPACKING pc=0x00000000028f73ef sp=0x00000000027ae208 mode 2
+Event: 0.329 loading class com/altera/utilities/AltFileTraverser$PathAndPattern
+Event: 0.329 loading class com/altera/utilities/AltFileTraverser$PathAndPattern done
+
+
+Dynamic libraries:
+0x00007ff7f2600000 - 0x00007ff7f2634000 	C:\altera\14.1\quartus\bin64\jre64\bin\java.exe
+0x00007ffd465b0000 - 0x00007ffd467a5000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd44af0000 - 0x00007ffd44bad000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd43fa0000 - 0x00007ffd44269000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd463c0000 - 0x00007ffd4646c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd464d0000 - 0x00007ffd4656e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd44db0000 - 0x00007ffd44e4c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd461e0000 - 0x00007ffd4630b000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd44bb0000 - 0x00007ffd44d50000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd43e10000 - 0x00007ffd43e32000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd44970000 - 0x00007ffd4499a000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd44270000 - 0x00007ffd4437b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd43d70000 - 0x00007ffd43e0d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd43ea0000 - 0x00007ffd43fa0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd2ccf0000 - 0x00007ffd2cf8a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.844_none_ca00b6081b84eb1d\COMCTL32.dll
+0x00007ffd45650000 - 0x00007ffd45680000 	C:\WINDOWS\System32\IMM32.DLL
+0x00000000543a0000 - 0x0000000054472000 	C:\altera\14.1\quartus\bin64\jre64\bin\msvcr100.dll
+0x0000000053350000 - 0x0000000053b7a000 	C:\altera\14.1\quartus\bin64\jre64\bin\server\jvm.dll
+0x00007ffd46090000 - 0x00007ffd46098000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffcffe10000 - 0x00007ffcffe19000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd35a40000 - 0x00007ffd35a67000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd450e0000 - 0x00007ffd4514b000 	C:\WINDOWS\System32\WS2_32.dll
+0x0000000054250000 - 0x000000005425f000 	C:\altera\14.1\quartus\bin64\jre64\bin\verify.dll
+0x0000000054220000 - 0x0000000054248000 	C:\altera\14.1\quartus\bin64\jre64\bin\java.dll
+0x0000000054200000 - 0x0000000054216000 	C:\altera\14.1\quartus\bin64\jre64\bin\zip.dll
+0x00007ffd45940000 - 0x00007ffd46082000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffd41e50000 - 0x00007ffd425e0000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ffd44610000 - 0x00007ffd44965000 	C:\WINDOWS\System32\combase.dll
+0x00007ffd43760000 - 0x00007ffd4378c000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x00007ffd460a0000 - 0x00007ffd4614e000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ffd458e0000 - 0x00007ffd45935000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffd43c30000 - 0x00007ffd43c4f000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffd30130000 - 0x00007ffd30314000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+0x00007ffd43cf0000 - 0x00007ffd43d70000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+
+VM Arguments:
+jvm_args: -Xmx1500M -XX:+UseSerialGC 
+java_command: com.altera.sopcmodel.sbtools.sbcatalog.SbCatalog --xml --project-directory= --search-path=$,D:\Y3_2021W\CPEN311\Lab4\Lab4_template_de1soc\template_de1soc
+java_class_path (initial): C:/altera/14.1/quartus/sopc_builder/model/lib\Nlview.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\QuickServer.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\TableLayout.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\appframework-1.03.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\asm-3.1.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\asm-commons-3.1.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\basicmodel.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\beansbinding-1.2.1.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\binding-2.0.6.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.componenteditor2.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.app_lib.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.editor.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.elements.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.core.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.hal.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.lwhal.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.schema.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.scripting.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.commandline.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.cpexample.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.flash.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.launch.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.swinfo.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.embeddedsw.utilities.jar;C:/altera/14.1/quartus/sopc_builder/model/lib\com.altera.entityinterfaces.jar;C:/alte
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/altera/14.1/quartus/bin64;c:\altera\14.1\quartus\bin64\;c:\altera\14.1\quartus\bin64\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;QUARTUS_ROOTDIR\bin;C:\Program Files\MATLAB\R2020b\bin;C:\Users\Ruyi\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Ruyi\AppData\Local\Programs\Python\Python38-32\;C:\Users\Ruyi\AppData\Local\Microsoft\WindowsApps;C:\ffmpeg\bin;C:\altera\14.1\modelsim_ase\win32aloem;;C:\Users\Ruyi\AppData\Local\Programs\Microsoft VS Code\bin
+USERNAME=Ruyi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 12 (12 cores per cpu, 1 threads per core) family 23 model 113 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit
+
+Memory: 4k page, physical 16724192k(9570292k free), swap 19214560k(7894040k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.5-b02) for windows-amd64 JRE (1.8.0_05-b13), built on Mar 18 2014 01:08:39 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Mar 14 10:47:36 2021
+elapsed time: 0 seconds
+

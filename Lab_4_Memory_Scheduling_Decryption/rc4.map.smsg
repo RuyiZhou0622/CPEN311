@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at t1_forloop.v(17): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at t2a_forloop.sv(58): always construct contains both blocking and non-blocking assignments

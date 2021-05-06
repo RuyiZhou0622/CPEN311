@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 7",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFCB9D08784",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffcb9d08783: synth_vrfx + 0x1d8783 (?vrfx_add_to_extractor_migration_report@@YAXW4VRFX_EXTRACTOR_MIGRATION_ENUM@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@@Z + 0x12c9d3)\n\t0x7ffcb9d0c1e3: synth_vrfx + 0x1dc1e3 (?vrfx_add_to_extractor_migration_report@@YAXW4VRFX_EXTRACTOR_MIGRATION_ENUM@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@@Z + 0x130433)\n\t0x7ffcb9d46b8f: synth_vrfx + 0x216b8f (?vrfx_add_to_extractor_migration_report@@YAXW4VRFX_EXTRACTOR_MIGRATION_ENUM@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@@Z + 0x16addf)\n\t0x7ffcb9d3e81a: synth_vrfx + 0x20e81a (?vrfx_add_to_extractor_migration_report@@YAXW4VRFX_EXTRACTOR_MIGRATION_ENUM@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@@Z + 0x162a6a)\n\t0x7ffcb9ce614a: synth_vrfx + 0x1b614a (?vrfx_add_to_extractor_migration_report@@YAXW4VRFX_EXTRACTOR_MIGRATION_ENUM@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@@Z + 0x10a39a)\n\t0x7ffcb9ce6438: synth_vrfx + 0x1b6438 (?vrfx_add_to_extractor_migration_report@@YAXW4VRFX_EXTRACTOR_MIGRATION_ENUM@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@@Z + 0x10a688)\n\t0x7ffcb9b8c8a0: synth_vrfx + 0x5c8a0 (??1VRFX_ELABORATOR@@UEAA@XZ + 0x2330)\n\t0x7ffcb9b8b9d7: synth_vrfx + 0x5b9d7 (??1VRFX_ELABORATOR@@UEAA@XZ + 0x1467)\n\t0x7ffcb9b8a7d2: synth_vrfx + 0x5a7d2 (??1VRFX_ELABORATOR@@UEAA@XZ + 0x262)\n\t0x7ffcba6e9550: synth_sgn + 0x89550 (?sgn_source_file_processing@@YA?AW4SGN_STATE_ENUM@@PEAVCMP_FACADE@@@Z + 0x75a10)\n\t0x7ffcba6f31ed: synth_sgn + 0x931ed (?sgn_source_file_processing@@YA?AW4SGN_STATE_ENUM@@PEAVCMP_FACADE@@@Z + 0x7f6ad)\n\t0x7ffcba673039: synth_sgn + 0x13039 (?sgn_qic_full@@YA?AW4SGN_STATE_ENUM@@PEAVCMP_FACADE@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@@@std@@AEAV?$vector@NV?$MEM_STL_ALLOCATOR@N@@@4@@Z + 0x169)\n\t0x7ff79ef6483f: quartus_map + 0x483f\n\t0x7ff79ef75256: quartus_map + 0x15256\n\t0x7ff79ef74d30: quartus_map + 0x14d30\n\t0x7ffd222a2540: comp_qexe + 0x12540 (?qexe_apply_ini_vars@@YAXXZ + 0x2450)\n\t0x7ffd222a75f2: comp_qexe + 0x175f2 (?qexe_process_cmdline_arguments@@YA_NPEAVQEXE_CMDLINE@@HPEAPEBD@Z + 0x2502)\n\t0x7ffd222a8381: comp_qexe + 0x18381 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xc1)\n\t0x7ff79ef7c438: quartus_map + 0x1c438\n\t0x7ffcfffdcad8: CCL_MSG + 0xcad8 (?msg_initialize_out_of_memory_handler@@YAXXZ + 0x378)\n\t0x7ffcfffde20c: CCL_MSG + 0xe20c (?msg_set_stack_size@@YAXH@Z + 0x7c)\n\t0x7ffd000e5aa0: ccl_mem + 0x5aa0 (?mem_gen_get_project_output_directory@@YAPEBDXZ + 0x64)\n\t0x7ffcfffdc721: CCL_MSG + 0xc721 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff79ef8ace2: quartus_map + 0x2ace2\n\t0x7ffd44b07033: KERNEL32 + 0x17033 (BaseThreadInitThunk + 0x13)\n\t0x7ffd46602650: ntdll + 0x52650 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "14.1.0",
+		"build" : "186",
+		"edition" : "Web Edition"
+	}
+}

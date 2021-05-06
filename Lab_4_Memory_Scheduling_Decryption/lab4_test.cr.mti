@@ -1,0 +1,54 @@
+D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/tb_sync.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/tb_sync.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module tb_sync
+
+Top level modules:
+	tb_sync
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T1_forloop.v {1 {vlog -work work -stats=none D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T1_forloop.v
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module T1_forloop
+
+Top level modules:
+	T1_forloop
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T2a_forloop.sv {0 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T2a_forloop.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module T2a_forloop
+** Error: D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T2a_forloop.sv(62): (vlog-2110) Illegal reference to net "wren".
+
+** Error: D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T2a_forloop.sv(65): (vlog-2110) Illegal reference to net "wren".
+
+
+} {4.0 5.0 6.0 7.0} {}} D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T2a_test.v {1 {vlog -work work -stats=none D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T2a_test.v
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module T2a_test
+
+Top level modules:
+	T2a_test
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/s_memory.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/s_memory.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity s_memory
+-- Compiling architecture SYN of s_memory
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/synchorizer.sv {1 {vlog -work work -sv -stats=none D:/Y3_2021W/CPEN311/Lab2/lab2_template_de1soc/template_de1soc/rtl/synchorizer.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module synchorizer
+-- Compiling module FDC
+
+Top level modules:
+	synchorizer
+
+} {} {}} D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T1_test.v {1 {vlog -work work -stats=none D:/Y3_2021W/CPEN311/Lab4/Lab4_template_de1soc/template_de1soc/T1_test.v
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module T1_test
+
+Top level modules:
+	T1_test
+
+} {} {}}
