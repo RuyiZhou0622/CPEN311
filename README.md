@@ -7,4 +7,4 @@ The modules are synthesised in Quartus 14.2 and simulated in ModelSim.
 
 This purpose of this material is to share the computer and electronic knowledge. Please only use this for studying and DO NOT cheat using this material.
 
-Please contact me via email zry1820330027@gmail.com if you find any problems. Thank you.
+Please contact me via email ruyizhou0711@gmail.com if you find any problems. Thank you.
